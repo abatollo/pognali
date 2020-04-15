@@ -52,16 +52,155 @@
 
     <h1 class="visually-hidden">«Погнали?» — сервис поиска попутчиков</h1>
 
-    <section class="hero-serction">
-      <h2>В путешествие с крутыми попутчиками!</h2>
-
-      <ul>
-        <li><a href="callto:88005558628"></a></li>
-        <li><a href="mailto:mail@htmlacademy.ru"></a></li>
-        <li><a href="#">Авторизация</a></li>
+    <section class="hero-section">
+      <h2 class="hero-section__heading">В путешествие с крутыми попутчиками!</h2>
+      <ul class="hero-section__calls-to-action-list calls-to-action-list">
+        <li class="call-to-action-list__item"><a class="call-to-action-list__link calls-to-action-list__link--callto" href="callto:88005558628"></a></li>
+        <li class="call-to-action-list__item"><a class="call-to-action-list__link calls-to-action-list__link--mailto" href="mailto:mail@htmlacademy.ru"></a></li>
+        <li class="call-to-action-list__item"><a class="call-to-action-list__link calls-to-action-list__link--link" href="#">Авторизация</a></li>
       </ul>
     </section>
 
+    <section class="quotes-section">
+      <h2 class="visually-hidden">Отзывы прессы</h2>
+      <blockquote class="quotes-section__quote">
+        <p class="quotes-section__text">«Лучшее приложение, что я видел в жизни!»</p>
+        <cite class="quotes-section__source">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </blockquote>
+    </section>
+
+    <section class="steps-section">
+      <h2 class="visually-hidden"></h2>
+      <ul class="steps-section__list steps-list">
+        <li class="steps-list__item">Выберите направление</li>
+        <li class="steps-list__item">Изучите идеи путешественников</li>
+        <li class="steps-list__item">Находите тех, кто похож на вас</li>
+        <li class="steps-list__item">Путешествуйте вместе!</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2 class="about-section__heading">О сервисе</h2>
+      <p class="about-section__lead">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+      <p class="about-section__ending">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+    </section>
+
+    <section class="destinations-section">
+      <h2 class="destinations-section__heading">Направления</h2>
+      <p class="destinations-section__lead">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+      <ul class="destinations-section__list countries-list">
+        <li class="countries-list__item country-item">
+          <a class="country-item__link" href="#">
+            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Песчаное побережье Таиланда" width="270" height="110">
+            <h3 class="country-item__name">Таиланд</h3>
+            <p class="country-item__description">Джунгли зовут!</p>
+            <p class="country-item__users">18321</p>
+          </a>
+        </li>
+        <li class="countries-list__item country-item">
+          <a class="country-item__link" href="#">
+            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Французская улица" width="270" height="110">
+            <h3 class="country-item__name">Франция</h3>
+            <p class="country-item__description">Трэ бьен, манифик!</p>
+            <p class="country-item__users">12518</p>
+          </a>
+        </li>
+        <li class="countries-list__item country-item">
+          <a class="country-item__link" href="#">
+            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Прогулочный катер на фоне старого города" width="270" height="110">
+            <h3 class="country-item__name">Чехия</h3>
+            <p class="country-item__description">Закоулки старой Европы</p>
+            <p class="country-item__users">5326</p>
+          </a>
+        </li>
+      </ul>
+      <a class="destinations-section__more" href="#">Показать все</a>
+    </section>
+
+    <section class="companions-section">
+      <h2 class="companions-section__heading"></h2>
+      <p class="companions-section__lead"></p>
+      <p class="companions-section__ending"></p>
+      <ul class="companions-section__list companions-list">
+        <li class="companions-list__item companion-item">
+          <a class="companion-item__link" href="#">
+            <img class="companion-item__image" src="https://via.placeholder.com/270x270" alt="Изображение профиля пользователя Таня Фирсова" width="270" height="270">
+            <ul class="companion-item__flags flag-list">
+              <li class="flag-list__item flag-list__item--lk"></li>
+              <li class="flag-list__item flag-list__item--th"></li>
+              <li class="flag-list__item flag-list__item--sc"></li>
+            </ul>
+            <h3 class="companion-item__name">Таня Фирсова</h3>
+            <p class="companion-item__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <ul class="companion-item__transportation transportation-list">
+              <li class="transportation-list__item transportation-list__item--flying transportation-list__item--active"></li>
+              <li class="transportation-list__item transportation-list__item--bussing"></li>
+              <li class="transportation-list__item transportation-list__item--biking"></li>
+              <li class="transportation-list__item transportation-list__item--walking"></li>
+            </ul>
+            <div class="companion-item__level level-badge">
+              <span class="level-badge__value">99</span>
+              <span class="level-badge_suffix">level</span>
+            </div>
+          </a>
+        </li>
+        <li class="companions-list__item companion-item">
+          <a class="companion-item__link" href="#">
+            <img class="companion-item__image" src="https://via.placeholder.com/270x270" alt="Изображение профиля пользователя Петя Демин" width="270" height="270">
+            <ul class="companion-item__flags flag-list">
+              <li class="flag-list__item flag-list__item--be"></li>
+              <li class="flag-list__item flag-list__item--cz"></li>
+            </ul>
+            <h3 class="companion-item__name companion-item__name--online">Петя Демин</h3>
+            <p class="companion-item__tags">#бургер #бар #футбол
+            #концерт #крафт</p>
+            <ul class="companion-item__transportation transportation-list">
+              <li class="transportation-list__item transportation-list__item--flying transportation-list__item--active"></li>
+              <li class="transportation-list__item transportation-list__item--bussing transportation-list__item--active"></li>
+              <li class="transportation-list__item transportation-list__item--biking"></li>
+              <li class="transportation-list__item transportation-list__item--walking transportation-list__item--active"></li>
+            </ul>
+            <div class="companion-item__level level-badge">
+              <span class="level-badge__value">99</span>
+              <span class="level-badge_suffix">level</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a class="companions-section__more" href="#">Показать все</a>
+    </section>
+
+    <section class="offers-section">
+      <h2 class="offers-section__item">Добавьте свой профиль</h2>
+      <ul class="offers-section__list offers-list">
+        <li class="offers-list__item offers-list__item--first">
+          <p>Базовое размещение</p>
+          <p>Бесплатно</p>
+        </li>
+        <li class="offers-list__item offers-list__item--second">
+          <p>Вывод на первых позициях</p>
+          <p>99 руб./мес</p>
+        </li>
+        <li class="offers-list__item offers-list__item--third">
+          <p>Кастомный цвет карточки</p>
+          <p>59 руб./мес</p>
+        </li>
+      </ul>
+      <a class="offers-section__more" href="#">Показать тарифы для бизнеса</a>
+    </section>
+
+    <footer class="page-footer">
+      <h2 class="page-footer__heading">Погнали?</h2>
+      <ul class="page-footer__social-menu footer-social-list">
+        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--fb" href="#"></a></li>
+        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--vk" href="#"></a></li>
+        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--in" href="#"></a></li>
+      </ul>
+      <div class="developer-sign">
+        <p class="developer-sign__text">Разработано</p>
+        <a class="developer-sign__imglink" href="#"></a>
+      </div>
+    </footer>
   </main>
 
 </body>
