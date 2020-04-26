@@ -2,15 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>HTML Academy: Погнали</title>
 </head>
 
 <body>
-
   <header class="page-header">
     <a href="" class="page-header__link">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Стилизация слова «Погнали?»" width="100" height="19">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Стилизация слова «Погнали?»" width="100" height="19" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle">Открыть меню</button>
@@ -19,10 +18,10 @@
           <a href="#">О сервисе</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a href="#">Направления</a>
+          <a href="form.html">Направления</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Попутчики</a>
+          <a href="catalog.html">Попутчики</a>
         </li>
       </ul>
       <a href="login.html" class="main-nav__auth"></a>
@@ -49,15 +48,137 @@
   </header>
 
   <main class="page-filter">
-
     <h1 class="page-filter__heading">Направления</h1>
+
+    <!-- Настолько не уверен в разметке, что лучше уже в момент стилизации придумаю классы-->
+
+    <section class="">
+      <h2 class="visually-hidden">Профиль</h2>
+      <div class="level-badge">
+        <span class="level-badge__value">99</span>
+        <span class="level-badge__suffix">level</span>
+      </div>
+      <img class="" src="https://via.placeholder.com/100x100.jpg" alt="">
+      <a class="" href="#">Сменить фото</a>
+      <h3>Тэги</h3>
+      <p>#бургер #бар #футбол #концерт #крафт</p>
+      <h3>Транспорт</h3>
+      <ul class="transport-list">
+        <li class="transport-list__item transport-list__item--flying transport-list__item--active"></li>
+        <li class="transport-list__item transport-list__item--bussing"></li>
+        <li class="transport-list__item transport-list__item--biking"></li>
+        <li class="transport-list__item transport-list__item--walking"></li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="">
+      <h2 class="">Мои планы:</h2>
+      <ul>
+        <li class="">
+          <p>Франция, Италия</p>
+          <p>3 попутчика</p>
+          <p>26 мар — 29 мар</p>
+          <a href="#">Изменить</a>
+        </li>
+        <li>
+          <p>Таиланд, Индонезия</p>
+          <p>1 попутчик</p>
+          <p>1 июл — 15 июл</p>
+          <a href="#">Изменить</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Добавить план:</h2>
+      <form action="http://echo.htmlacademy.ru/" method="POST">
+
+        <fieldset>
+          <legend>Шаг 1.<br>Даты пребывания</legend>
+          <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+          <ul>
+            <li>
+              <label>Ищу попутчиков</label>
+              <input type="text" name="companions" value="2">
+            </li>
+            <li>
+              <label>Длительность:</label>
+              <input type="text" name="duration" value="2">
+            </li>
+            <li>
+              <input class="visually-hidden" type="checkbox" name="kids-allowed" checked>
+              <label>Можно с детьми</label>
+            </li>
+            <li>
+              <!--Выбор диапазона дат-->
+            </li>
+          </ul>
+          <a href="#">Следующий шаг</a>
+        </fieldset>
+
+        <fieldset>
+          <legend>Шаг 2.<br>Маршрут</legend>
+          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+
+          <select name="user-country-1">
+            <option value="null">Выберите страну</option>
+            <option value="ba" selected>Босния и Герцеговина</option>
+            <option value="cz">Чехия</option>
+          </select>
+
+          <select name="user-country-2">
+            <option value="null">Выберите страну</option>
+            <option value="ba">Босния и Герцеговина</option>
+            <option value="cz" selected>Чехия</option>
+          </select>
+
+          <select name="user-country-3">
+            <option value="null">Выберите страну</option>
+            <option value="ba">Босния и Герцеговина</option>
+            <option value="cz">Чехия</option>
+          </select>
+
+          <select name="user-country-4">
+            <option value="null">Выберите страну</option>
+            <option value="ba">Босния и Герцеговина</option>
+            <option value="cz">Чехия</option>
+          </select>
+          <a href="#">Следующий шаг</a>
+          <a href="#">На шаг назад</a>
+        </fieldset>
+
+        <fieldset>
+          <legend>Шаг 3.<br>Развлечения</legend>
+          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+          <label for="entertainment-1">Босния и герцеговина</label>
+          <textarea name="entertainment-1" id="entertainment-1" cols="30" rows="10"></textarea>
+
+          <label for="entertainment-2">Чехия</label>
+          <textarea name="entertainment-2" id="entertainment-2" cols="30" rows="10"></textarea>
+
+          <button type="submit">Отправить</button>
+          <a href="#">На шаг назад</a>
+        </fieldset>
+
+
+      </form>
+    </section>
 
     <footer class="page-footer">
       <h2 class="page-footer__heading">Погнали?</h2>
       <ul class="page-footer__social-menu footer-social-list">
-        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--fb" href="#"></a></li>
-        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--vk" href="#"></a></li>
-        <li class="footer-social-list__item"><a class="footer-social-list__link footer-social-list__link--in" href="#"></a></li>
+        <li class="footer-social-list__item">
+          <a class="footer-social-list__link footer-social-list__link--fb" href="#"></a>
+        </li>
+        <li class="footer-social-list__item">
+          <a class="footer-social-list__link footer-social-list__link--vk" href="#"></a>
+        </li>
+        <li class="footer-social-list__item">
+          <a class="footer-social-list__link footer-social-list__link--in" href="#"></a>
+        </li>
       </ul>
       <div class="developer-sign">
         <p class="developer-sign__text">Разработано</p>
@@ -65,7 +186,6 @@
       </div>
     </footer>
   </main>
-
 </body>
 
 </html>
