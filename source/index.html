@@ -4,20 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Погнали</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__top">
-      <a href="" class="page-header__link">
-        <img class="page-header__logo-image" src="../img/logo-mobile-white@1x.png" alt="Стилизация слова «Погнали?»" width="100" height="19" />
-      </a>
-      <button class="page-header__toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 11"><path d="M1.5 3h22c.8 0 1.5-.7 1.5-1.5S24.3 0 23.5 0h-22C.7 0 0 .7 0 1.5S.7 3 1.5 3zM23.5 8h-22C.7 8 0 8.7 0 9.5S.7 11 1.5 11h22c.8 0 1.5-.7 1.5-1.5S24.3 8 23.5 8z"/></svg>
-      </button>
-    </div>
+    <a href="" class="page-header__link">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/100x19" alt="Стилизация слова «Погнали?»" width="100" height="19" />
+    </a>
     <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="#">О сервисе</a>
@@ -59,15 +55,15 @@
       <h2 class="hero-section__heading">
         В путешествие с крутыми попутчиками!
       </h2>
-      <ul class="hero-section__list">
-        <li class="hero-section__item">
-          <a class="hero-section__link hero-section__link--callto" href="callto:88005558628"></a>
+      <ul class="hero-section__calls-to-action-list calls-to-action-list">
+        <li class="call-to-action-list__item">
+          <a class="call-to-action-list__link calls-to-action-list__link--callto" href="callto:88005558628"></a>
         </li>
-        <li class="hero-section__item">
-          <a class="hero-section__link hero-section__link--mailto" href="mailto:mail@htmlacademy.ru"></a>
+        <li class="call-to-action-list__item">
+          <a class="call-to-action-list__link calls-to-action-list__link--mailto" href="mailto:mail@htmlacademy.ru"></a>
         </li>
-        <li class="hero-section__item">
-          <a class="hero-section__link hero-section__link--link" href="#">Авторизация</a>
+        <li class="call-to-action-list__item">
+          <a class="call-to-action-list__link calls-to-action-list__link--link" href="#">Авторизация</a>
         </li>
       </ul>
     </section>
@@ -84,11 +80,11 @@
 
     <section class="steps-section">
       <h2 class="visually-hidden"></h2>
-      <ul class="steps-section__list">
-        <li class="steps-section__item">Выберите направление</li>
-        <li class="steps-section__item">Изучите идеи путешественников</li>
-        <li class="steps-section__item">Находите тех, кто похож на вас</li>
-        <li class="steps-section__item">Путешествуйте вместе!</li>
+      <ul class="steps-section__list steps-list">
+        <li class="steps-list__item">Выберите направление</li>
+        <li class="steps-list__item">Изучите идеи путешественников</li>
+        <li class="steps-list__item">Находите тех, кто похож на вас</li>
+        <li class="steps-list__item">Путешествуйте вместе!</li>
       </ul>
     </section>
 
@@ -111,29 +107,35 @@
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
         куда хотели бы отправиться и чем можно там заняться.
       </p>
-      <ul class="destinations-section__list countries-list">
-        <li class="countries-list__item country-item">
-          <a class="country-item__link" href="#">
-            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Песчаное побережье Таиланда" width="270" height="110" />
-            <h3 class="country-item__name">Таиланд</h3>
-            <p class="country-item__description">Джунгли зовут!</p>
-            <p class="country-item__users">18321</p>
+      <ul class="destinations-section__list">
+        <li class="destinations-section__item">
+          <a class="destinations-section__link" href="#">
+            <img class="destinations-section__image" src="img/thailand-mobile@1x.jpg" alt="Песчаное побережье Таиланда" width="270" height="110" />
+            <div class="destinations-section__wrapper">
+              <h3 class="destinations-section__name">Таиланд</h3>
+              <p class="destinations-section__users">18321</p>
+              <p class="destinations-section__description">Джунгли зовут!</p>
+            </div>
           </a>
         </li>
-        <li class="countries-list__item country-item">
-          <a class="country-item__link" href="#">
-            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Французская улица" width="270" height="110" />
-            <h3 class="country-item__name">Франция</h3>
-            <p class="country-item__description">Трэ бьен, манифик!</p>
-            <p class="country-item__users">12518</p>
+        <li class="destinations-section__item">
+          <a class="destinations-section__link" href="#">
+            <img class="destinations-section__image" src="img/france-mobile@1x.jpg" alt="Французская улица" width="270" height="110" />
+            <div class="destinations-section__wrapper">
+              <h3 class="destinations-section__name">Франция</h3>
+              <p class="destinations-section__users">12518</p>
+              <p class="destinations-section__description">Трэ бьен, манифик!</p>
+            </div>
           </a>
         </li>
-        <li class="countries-list__item country-item">
-          <a class="country-item__link" href="#">
-            <img class="contry-item__image" src="https://via.placeholder.com/270x110" alt="Прогулочный катер на фоне старого города" width="270" height="110" />
-            <h3 class="country-item__name">Чехия</h3>
-            <p class="country-item__description">Закоулки старой Европы</p>
-            <p class="country-item__users">5326</p>
+        <li class="destinations-section__item">
+          <a class="destinations-section__link" href="#">
+            <img class="destinations-section__image" src="img/czech-mobile@1x.jpg" alt="Прогулочный катер на фоне старого города" width="270" height="110" />
+            <div class="destinations-section__wrapper">
+              <h3 class="destinations-section__name">Чехия</h3>
+              <p class="destinations-section__users">5326</p>
+              <p class="destinations-section__description">Закоулки старой Европы</p>
+            </div>
           </a>
         </li>
       </ul>
