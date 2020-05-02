@@ -1,0 +1,168 @@
+.companions-section {
+  background-color: #161c35;
+  color: white;
+  padding: 0 25px;
+  padding-bottom: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &__heading {
+    margin: 0;
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-bottom: 0;
+    padding-left: 25px;
+    color: #ff8d30;
+  }
+
+  &__lead {
+    padding: 0 25px;
+  }
+
+  &__ending {
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #1d2e5b;
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+  }
+
+  &__flags {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 240px;
+    position: absolute;
+  }
+
+  &__flags-item {
+    width: 35px;
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--lk {
+      background-image: url("../img/flags-back@1x.png");
+    }
+
+    &--th {
+      background-image: url("../img/flags-back@1x.png");
+    }
+
+    &--sc {
+      background-image: url("../img/flags-back@1x.png");
+    }
+
+    &--be {
+      background-image: url("../img/flags-back@1x.png");
+    }
+
+    &--cz {
+      background-image: url("../img/flags-back@1x.png");
+    }
+  }
+
+  &__wrapper {
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  &__name {
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  &__tags {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    width: 185px;
+    padding-bottom: 10px;
+  }
+
+  &__transportation {
+    display: flex;
+  }
+
+  &__transportation-item {
+    width: 21px;
+    height: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &--flying {
+      background-image: url("../img/plane.svg");
+    }
+
+    &--bussing {
+      background-image: url("../img/bus.svg");
+    }
+
+    &--biking {
+      background-image: url("../img/bike.svg");
+    }
+
+    &--running {
+      background-image: url("../img/run.svg");
+    }
+  }
+
+  &__more {
+    background-color: #ffd74b;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 14px;
+    background-position: right 25px center;
+  }
+}

@@ -1,0 +1,139 @@
+.page-header {
+  background-color: #161c35;
+  position: fixed;
+  z-index: 1;
+  // width: 100%;
+  width: 320px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-image {
+    box-sizing: content-box;
+    padding: 27px 27px 27px 27px;
+    display: block;
+  }
+
+  &__toggle {
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+    width: 25px;
+    height: 11px;
+    padding: 31px 25px;
+    fill: white;
+  }
+}
+
+.main-nav {
+  // display: none;
+  padding-top: 71px;
+  background-color: white;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: "BloggerSans Medium", Arial;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #192144;
+  }
+
+  &__auth {
+    background-color: #ffd74b;
+    color: black;
+    width: 270px;
+    display: inline-block;
+    margin: 0 25px;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    color: #161c35;
+    text-transform: uppercase;
+  }
+
+  &__contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 50px;
+  }
+
+  &__contacts-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: middle;
+    padding-left: 25px + 60px;
+    padding-right: 25px;
+    text-transform: uppercase;
+  }
+
+  &__contacts-link::before {
+    position: absolute;
+    content: "";
+    left: 25px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+  }
+
+  &__contacts-link--phone::before {
+    background-image: url("../img/contacts-phone.svg");
+  }
+
+  &__contacts-link--mail::before {
+    background-image: url("../img/contacts-mail.svg");
+  }
+
+  &__socials-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  &__socials-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 15px;
+
+    &--fb {
+      background-image: url("/img/facebook.svg");
+    }
+    &--vk {
+      background-image: url("/img/vk.svg");
+    }
+    &--in {
+      background-image: url("/img/instagram.svg");
+    }
+  }
+}
