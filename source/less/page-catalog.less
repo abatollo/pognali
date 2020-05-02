@@ -1,6 +1,26 @@
 .page-catalog {
-    &__heading {
-        margin: 0;
-        padding-top: 73px;
-    }
+  &__heading {
+    margin: 0;
+    padding-top: 93px;
+    color: white;
+    background-color: #161c35;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    line-height: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+  }
+
+  &__heading::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 155px;
+    background-color: #ff8d30;
+    bottom: -2px;
+    left: 25px;
+  }
 }
