@@ -5,5 +5,5 @@ mainMenu.classList.add('main-nav--hidden');
 
 menuButton.addEventListener(`click`, function (evt) {
     evt.preventDefault;
-    mainMenu.classList.add('main-nav--hidden');
+    mainMenu.classList.toggle('main-nav--hidden');
 })
