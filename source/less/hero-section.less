@@ -1,22 +1,33 @@
 .hero-section {
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 404px;
-  background-color: #161c35;
+  background-image:
+    url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
+  background-position:
+    center bottom,
+    center center;
+  height: 405px;
+  background-color: @deep-blue;
   color: white;
   position: relative;
 
+  display: flex;
+  justify-content: center;
+
   &__heading {
+    font-family: "Blogger Sans Medium", Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 40px;
+    width: 100%;
+    max-width: 240px;
+    letter-spacing: 1px;
     text-align: center;
 
     padding: 0;
     margin: 0;
-    padding-top: 25px;
+    padding-top: 18px;
   }
 
   &__list {
@@ -32,8 +43,10 @@
   }
 
   &__link {
+    font-family: "Blogger Sans Medium", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
     display: inline-block;
-    color: black;
+    color: @deep-blue;
     text-decoration: none;
     border-radius: 40px;
     text-align: center;
@@ -41,16 +54,17 @@
     vertical-align: middle;
     font-size: 17px;
     text-transform: uppercase;
+    font-weight: bold;
 
     &--callto {
-      background-color: #ff8d30;
       width: 40px;
       height: 40px;
+      background-color: #ff8d30;
 
-      background-image: url("../img/topmenu-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 20px;
+      background-image: url("../img/topmenu-phone.svg");
     }
 
     &--mailto {
@@ -58,18 +72,16 @@
       height: 40px;
       background-color: #ffbd30;
 
-      background-image: url("../img/topmenu-mail.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 20px;
+      background-image: url("../img/topmenu-mail.svg");
     }
 
     &--link {
-      background-color: #ffd74b;
       height: 40px;
       width: 189px;
-
-      font-weight: bold;
+      background-color: #ffd74b;
     }
   }
 }
