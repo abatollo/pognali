@@ -1,9 +1,30 @@
 html {
-  box-sizing: border-box;
   font-family: "Blogger Sans Light", Arial, Helvetica, sans-serif;
   min-width: 320px;
-  margin: 0 auto;
-  color: black;
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  background-color: @bg-blue;
+}
+
+.container {
+  width: 270px;
+  padding: 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 688px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1320px;
+    padding: 0 60px;
+  }
 }
 
 *,
@@ -20,4 +41,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
