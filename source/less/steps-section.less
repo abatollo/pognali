@@ -2,64 +2,64 @@
   background-color: #192144;
   height: 280px;
   position: relative;
+}
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin: 0 25px;
-    position: absolute;
-    top: -80px;
-    counter-reset: item;
+.steps-section__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 0 25px;
+  position: absolute;
+  top: -80px;
+  counter-reset: item;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
-  &__item {
-    width: 270px;
-    background-color: #ff8d30;
-    font-weight: bold;
-    height: 90px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: -10px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 25px;
-    padding-top: 23px;
-    padding-right: 130px;
-    padding-bottom: 30px;
-    position: relative;
-  }
+.steps-section__item {
+  width: 270px;
+  background-color: #ff8d30;
+  font-weight: bold;
+  height: 90px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 25px;
+  padding-top: 23px;
+  padding-right: 130px;
+  padding-bottom: 30px;
+  position: relative;
+}
 
-  &__item::after {
-    counter-increment: item;
-    content: counter(item);
-    position: absolute;
-    right: 23px;
-    top: 23px;
-    color: white;
-  }
+.steps-section__item::after {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  right: 23px;
+  top: 23px;
+  color: white;
+}
 
-  &__item:nth-of-type(1) {
-    background-color: #ff8d30;
-    margin-top: 0;
-  }
+.steps-section__item:nth-of-type(1) {
+  background-color: #ff8d30;
+  margin-top: 0;
+}
 
-  &__item:nth-of-type(2) {
-    background-color: #ffa530;
-  }
+.steps-section__item:nth-of-type(2) {
+  background-color: #ffa530;
+}
 
-  &__item:nth-of-type(3) {
-    background-color: #ffbd30;
-  }
+.steps-section__item:nth-of-type(3) {
+  background-color: #ffbd30;
+}
 
-  &__item:last-of-type {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #ffd74b;
-  }
+.steps-section__item:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ffd74b;
 }

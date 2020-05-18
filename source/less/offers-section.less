@@ -2,81 +2,81 @@
   background-color: #edeff6;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
 
-  &__heading {
-    margin: 0;
-    padding-top: 35px;
-    padding-right: 145px;
-    padding-bottom: 35px;
-    padding-left: 50px;
-    color: #ff8d30;
-    height: 145px;
+.offers-section__heading {
+  margin: 0;
+  padding-top: 35px;
+  padding-right: 145px;
+  padding-bottom: 35px;
+  padding-left: 50px;
+  color: #ff8d30;
+  height: 145px;
 
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
 
-    background-image: url("/img/rates@1x.png");
-    background-position: right 25px center;
-    background-repeat: no-repeat;
-    background-size: 99px;
-  }
+  background-image: url("/img/rates@1x.png");
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  background-size: 99px;
+}
 
-  &__list {
-    padding: 0 25px;
-    margin: 0;
-    list-style: none;
-    font-size: 16px;
-    line-height: 22px;
-    counter-reset: item;
-  }
+.offers-section__list {
+  padding: 0 25px;
+  margin: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  counter-reset: item;
+}
 
-  &__item {
-    position: relative;
-    margin: 30px 25px;
-    margin-right: 0;
-  }
+.offers-section__item {
+  position: relative;
+  margin: 30px 25px;
+  margin-right: 0;
+}
 
-  &__item::after {
-    counter-increment: item;
-    content: counter(item);
-    position: absolute;
-    top: 5px;
-    right: 0;
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 25px;
-    color: white;
-    background-color: #ffa530;
-  }
+.offers-section__item::after {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  color: white;
+  background-color: #ffa530;
+}
 
-  &__item:nth-of-type(1)::after {
-    background-color: #ffa530;
-  }
+.offers-section__item:nth-of-type(1)::after {
+  background-color: #ffa530;
+}
 
-  &__item:nth-of-type(2)::after {
-    background-color: #ffbd30;
-  }
+.offers-section__item:nth-of-type(2)::after {
+  background-color: #ffbd30;
+}
 
-  &__item:nth-of-type(3)::after {
-    background-color: #ffd74b;
-  }
+.offers-section__item:nth-of-type(3)::after {
+  background-color: #ffd74b;
+}
 
-  &__item-text {
-    padding: 0;
-    margin: 0;
-  }
+.offers-section__item-text {
+  padding: 0;
+  margin: 0;
+}
 
-  &__more {
-    color: black;
-    display: block;
-    margin: 0 25px;
-    text-decoration: none;
-    padding: 20px;
-    color: #192144;
-    font-weight: bold;
-  }
+.offers-section__more {
+  color: black;
+  display: block;
+  margin: 0 25px;
+  text-decoration: none;
+  padding: 20px;
+  color: #192144;
+  font-weight: bold;
 }
