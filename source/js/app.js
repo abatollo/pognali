@@ -1,4 +1,4 @@
-let menuButton = document.querySelector(`.page-header__toggle`);
+let menuButton = document.querySelector(`.header-main__toggle`);
 let mainMenu = document.querySelector(`.main-nav`);
 
 mainMenu.classList.add("main-nav--hidden");
