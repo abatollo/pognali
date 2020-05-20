@@ -1,57 +1,71 @@
 .section-offers {
+  height: 451px;
+
   background-color: #edeff6;
+
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .section-offers__heading {
+  height: 72px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 50px;
   padding-right: 145px;
-  padding-bottom: 35px;
-  padding-left: 50px;
-  color: #ff8d30;
-  height: 145px;
+  padding-bottom: 55px;
+  padding-left: 25px;
 
+  font-family: "Blogger Sans Bold", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 24px;
-  font-weight: bold;
+  color: #ff8d30;
 
   background-image: url("/img/rates@1x.png");
-  background-position: right 25px center;
+  background-position: right top 37px;
   background-repeat: no-repeat;
   background-size: 99px;
 }
 
 .section-offers__list {
-  padding: 0 25px;
+  padding: 0;
   margin: 0;
-  list-style: none;
+
   font-size: 16px;
   line-height: 22px;
+  color: #444444;
+
+  list-style: none;
+
   counter-reset: item;
 }
 
 .section-offers__item {
   position: relative;
-  margin: 30px 25px;
-  margin-right: 0;
+
+  padding-top: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 22px;
 }
 
 .section-offers__item::after {
-  counter-increment: item;
-  content: counter(item);
   position: absolute;
-  top: 5px;
-  right: 0;
-  border-radius: 50%;
-  height: 25px;
-  width: 25px;
+  top: -6px;
+  right: 1px;
+
+  height: 34px;
+  width: 34px;
+
+  color: white;
+  line-height: 34px;
   text-align: center;
   vertical-align: middle;
-  line-height: 25px;
-  color: white;
+
   background-color: #ffa530;
+
+  border-radius: 50%;
+  counter-increment: item;
+  content: counter(item);
 }
 
 .section-offers__item:nth-of-type(1)::after {
@@ -67,16 +81,18 @@
 }
 
 .section-offers__item-text {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .section-offers__more {
-  color: black;
   display: block;
-  margin: 0 25px;
-  text-decoration: none;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  font-family: "Blogger Sans Bold", Arial, Helvetica, sans-serif;
   color: #192144;
-  font-weight: bold;
+  text-decoration: none;
 }
